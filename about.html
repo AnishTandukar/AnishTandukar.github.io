@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="projectcss/project.css">
+    <style>
+        body{
+          background-image: url("projectimage/about.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: rgba(255, 255, 255, 0.8);
+          margin: 0;
+          padding: 0;
+        }
+        p{
+            font-size:20px;
+            color: white;
+        }
+        table{
+            color: white;
+        }
+    </style>
+        <script>
+            function submitComment() {
+                var commentInput = document.getElementById("commentInput").value;
+                var commentsDiv = document.getElementById("comments");
+                var commentParagraph = document.createElement("p");
+                commentParagraph.textContent = commentInput;
+                commentsDiv.appendChild(commentParagraph);
+                document.getElementById("commentInput").value = ""; // Clear input field after submission
+            }
+        </script>
+</head>
+<body >
+    <img src="projectimage/console_hub.png" alt="welcome to console hub" color="none">
+    <h1 style="text-align: center;">ABOUT US!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="Gnews.html">portfolio</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <p>This website is purely made to veiwers to engross themselves in the world of games and entertainment. </p> 
+    <br>
+    <br>
+    <h2>Description:</h2>
+    <p>Here goes the detailed description of your website or project.</p>
+    
+    <!-- Comment Section -->
+    <h2>Comments:</h2>
+    <form id="commentForm">
+        <input type="text" id="commentInput" placeholder="Leave a comment...">
+        <button type="button" onclick="submitComment()">Submit</button>
+    </form>
+    <div id="comments"></div>
+        
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    body{font-size: 14px;
+        font-family: Arial,sans-serif;}
+        ul{
+            padding: 0; 
+            list-style: none;
+         background: rgba(242,242,242,0.5);
+        
+    }
+         ul li {display: inline-block;}
+         ul li a{display: block;
+            padding: 10px 25px;
+            color: #000;
+         text-decoration: none;
+        }
+         ul li a:hover{color: #fff;
+        background: #232323;}
+        h1{
+            color: #fff;
+            font-size: 50px;
+        }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .image-container {
+    flex-basis: 45%; /* Adjust the width of the image container */
+    margin: 10px;
+    text-align: center;
+}
+.container .image-container img {
+    max-width: 100%;
+}
+.container .text-container {
+    flex-basis: 45%; /* Adjust the width of the text container */
+    margin: 10px;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+img.console-hub{
+    width: 150px;
+    height: 150px;
+}
+img.console-hub,h1{
+    display: inline-block;
+}
+p{
+    color: #fff;
+}
+.image-container{
+    flex-basis: 45%;
+    margin: 10px;
+    text-align: center;
+}
+body>*:not(.console-hub):not(body) img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+a.download{
+    display: inline-block;
+    background-color: yellow;
+    padding: 5px 10px;
+    text-decoration: none; /* remove underline */
+    color: black; /* change text color */
+    font-weight: bold; /* make text bold */
+    border-radius: 5px; /* add rounded corners */
+}
+a.download h1{
+    color:#000
+}
