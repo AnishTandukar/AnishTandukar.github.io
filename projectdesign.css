@@ -101,3 +101,12 @@ form button{
     margin-top: 10px;
     font-size: 16px;
 }
+footer{
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    color: #faf;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
