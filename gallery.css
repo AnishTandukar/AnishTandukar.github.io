@@ -82,3 +82,15 @@ a.download{
 a.download h1{
     color:#000
 }
+footer{
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    color: #faf;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    color:#faf
+}
