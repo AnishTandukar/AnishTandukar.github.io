@@ -73,6 +73,9 @@ form button{
     text-size-adjust: 1;
 }
 .container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
      text-align:center;
 }
 .images{
@@ -110,3 +113,32 @@ footer{
     bottom: 0;
     width: 100%;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1320px; /* Maximum width of the page */
+    margin: auto; /* Center the slider horizontally */
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Set slider height to full viewport height */
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+
