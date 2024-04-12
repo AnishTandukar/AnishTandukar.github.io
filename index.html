@@ -44,11 +44,31 @@
             <img src="projectimage/gaming.jpg" alt="Slider Image 2">
         </div>
         </div>
+        <button class="prev" onclick="moveSlider(-1)">Previous</button>
+        <button class="next" onclick="moveSlider(1)">Next</button>
         </div>
 <footer style="color: #faf; font-size: 25px;">
     <p><b>&copy; 2024 console hub. All rights reserved. </b></p>
     <p><b>Address: Kalanki, Kathmandu, Nepal</b></p>
 </footer>
 </div>
+<script>
+    let slideIndex = 0;
+    showSlides(slideIndex);
+
+    function moveSlider(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("slide");
+        if (n >= slides.length) {slideIndex = 0}    
+        if (n < 0) {slideIndex = slides.length - 1}
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex].style.display = "block";  
+    }
+</script>
 </body>
 </html>
